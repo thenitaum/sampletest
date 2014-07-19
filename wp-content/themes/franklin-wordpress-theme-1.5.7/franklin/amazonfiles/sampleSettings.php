@@ -1,0 +1,7 @@
+<?php
+ini_set('max_execution_time', 300); 
+define('AWS_API_KEY', 'AKIAJ7Z6UX4H2EZWYP5A');
+define('AWS_API_SECRET_KEY', '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');
+define('AWS_ASSOCIATE_TAG', '4560-3493-7751');
+define('AWS_ANOTHER_ASSOCIATE_TAG', '4560-3493-7751');
+

@@ -1,0 +1,32 @@
+using the Franklin WP theme with Easy Digital Downloads and the Crowdfunding by Astoundify plugins.
+
+I would like to do these stories:
+
+1. Use the Amazon API to upload products to the "Submission Form" page. (Accessible when the user clicks "Create a Campaign".) The kids should be able to click on a button, search Amazon, and then click purchase (or similar button) in Amazon, and have the product added to their campaign page to indicate that it is a product they are requesting. They should be able to do this with more than one product.
+
+I would like to use the way www.donorschoose.org does this as an example. Lets popup the window to select products in a new window. We can do this as a plugin or another way - whichever creates the best user experience.
+
+I don't know how to do this - please accept the job only if you do. 
+
+2. Enter "details" on "create a campaign" page into 4 different fields, not 1. Each field should show one of the 4 numbered prompts listed at the top of the "create a campaign page". (I will give you text.)
+
+This can be done using code similar to the code below:
+
+function franklin_child_atcf_shortcode_submit_fields($fields) {
+$fields['extra-field'] = array(
+'label' => 'My new field',
+'default' => null,
+'type' => 'text',
+'editable' => true,
+'placeholder' => null,
+'priority' => 25
+);
+return $fields;
+}
+
+add_filter( 'atcf_shortcode_submit_fields', 'franklin_child_atcf_shortcode_submit_fields' ;
+
+3. Create a campaign without seeing the "backer rewards" heading. This is a heading on the "create a campaign" page. I've removed the fields using a filter but I didn't know how to remove the header.
+(9:46:01 AM) ek project pe bhi kaam karna hai ..
+(9:46:02 AM) pls come
+(9:46:32 AM) git@github.com:erinbeitel/beta_ideated_io.git

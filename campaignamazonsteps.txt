@@ -1,0 +1,17 @@
+1 - place folder amazonfiles at wp-content\themes\franklin-wordpress-theme-1.5.7\franklin\amazonfiles
+
+2 - To include amazonmainfile add code at line 735 <?php include get_template_directory()."/amazonfiles/amazonmainfile.php";?> of wp-content\plugin\appthemer\crowdfunding\includes\shortcode-submit.php at 735 of function atcf_shortcode_submit
+
+3 - To save amazon products add code to wp-content\plugin\appthemer-crowdfunding\includes\shortcode-submit.php at line 1353
+
+4 - change code from the_excerpt() to echo get_the_content(); at line 14 of wp-content\themes\franklin-wordpress-theme-1.5.7\franklin\campaign-blurb.php
+
+5 - To display amazon products, add code to wp-content\themes\franklin-wordpress-theme-1.5.7\franklin\inc\crowdfunding\template.php of function franklin_edd_append_purchase_link() at line 225 or after $campaign = new ATCF_Campaign($post->ID)
+
+
+1 - 138/
+2 - check at 405 for saved data
+3 - 736/
+4 - des / update - save
+5 - 700 q1 - q4 save method
+6 - 1425 q1 - q4 save call method
